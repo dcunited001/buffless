@@ -15,6 +15,10 @@
 ;;===========================================
 ;;; Code:
 
+;;===========================================
+;; CURSOR POSITION
+;;===========================================
+
 (defun buffless-cursor-x ()
   "Return Buffless Cursor X."
   (current-column))
@@ -39,8 +43,29 @@
   "Return A Cursor Position List Relative to the current Buffler."
   (list (buffless-cursor-x) (buffless-cursor-y)))
 
-;; buffless-cursor-x
-;; buffless-cursor-y
+;; (defun current-buffler ())
+
+;;===========================================
+;;
+;;===========================================
+
+;;===========================================
+;; BUFFLER SEPARATORS
+;;===========================================
+
+;; (defun buffler-separator-line-top ())
+;; (defun buffler-separator-line-mid ())
+;; (defun buffler-separator-line-low ())
+;; (defun buffler-separator-draw ())
+
+;;===========================================
+;; ADD & REMOVE BUFFLERS
+;;===========================================
+
+;; (defun buffless-add-buffler ())
+;; (defun buffless-remove-buffler ())
+;; (defun buffless-move-buffler ())
+;; (defun buffless-list-bufflers ())
 
 (provide 'buffless)
 ;;; buffless.el ends here
