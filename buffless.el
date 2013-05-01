@@ -14,7 +14,7 @@
 ;; open multiple buffers in a single buffer
 ;;===========================================
 ;;; Code:
-_
+
 (defun buffless-cursor-x ()
   "Return Buffless Cursor X."
   (current-column))
@@ -33,7 +33,7 @@ _
 
 (defun buffler-cursor-y ()
   "Return Current Buffler Cursor X."
-  (- buffless-cursor-y current-buffler-line-start)
+  (- (buffless-cursor-y) (current-buffler-line-start)))
 
 (defun buffler-cursor ()
   "Return A Cursor Position List Relative to the current Buffler."
@@ -44,10 +44,3 @@ _
 
 (provide 'buffless)
 ;;; buffless.el ends here
-
-(setq cursor-pos '(buffless-cursor))
-
-(getq cursor-pos)
-
-(print x)
-(setq x 4)
